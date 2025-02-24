@@ -1,0 +1,55 @@
+body {
+  background-color: #f4f4f4; /* Light grey background */
+}
+
+.registration-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"], 
+input[type="file"] {
+  padding: 10px; /* Same height for all inputs */
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #fafafa; /* Light background for inputs */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.submit-btn {
+  padding: 10px;
+  background-color: #4caf50; /* Green background for the submit button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.submit-btn:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}

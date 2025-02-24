@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-height: 60px;
+    background-color: #1a1a2e;
+}
+
+
+
+.logo {
+    width: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 60px;
+    background-image: url('../../assets/Images/logo4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-icon button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('../../assets/Images/ABC-TREK.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.hero-content h1::before {
+    content: "DISCOVER";
+    position: absolute;
+    font-size: 120px;
+    color: rgba(255, 204, 0, 0.2); /* Light yellow overlay text */
+    top: -70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Search Bar Section */
+.search-bar {
+    background-color: #1a1a2e;
+    padding: 30px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.search-bar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-bar form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="number"] {
+    padding: 10px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ff4081;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-color: rgb(5, 107, 190);
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+
+}
+.card:hover {
+    transform: scale(1.05); /*enlarges the card */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  }
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+.service-link {
+  text-decoration: none; 
+  color: inherit; 
+  display: block; /* Make the entire box clickable */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* shadow */
+}
+
+#about {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#services {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.service {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 768px) {
+    .service-cards,
+    .service-list {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center;
+        gap: 20px; /* Adjust spacing between elements */
+    }
+
+    .card, .service {
+        width: 90%; /* Make cards take up most of the screen width */
+    }
+
+    .hero {
+        height: auto; /* Allow hero section to resize based on content */
+        padding: 50px 20px; /* Add more padding for spacing */
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Reduce font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
