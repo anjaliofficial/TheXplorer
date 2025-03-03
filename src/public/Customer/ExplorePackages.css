@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+  }
+  
+  .header p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Main Container */
+  .main-container {
+    padding: 40px 20px;
+  }
+  
+  /* Packages Grid */
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Package Box */
+  .package-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .package-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .package-content {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .package-image-container {
+    width: 100%;
+    height: 250px; /* Ensuring a fixed height for the image container */
+    overflow: hidden;
+  }
+  
+  .package-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    object-position: center; /* Centers the image */
+  }
+  
+  /* Package Details */
+  .package-title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #007bff;
+  }
+  
+  .package-description {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #666;
+  }
+  
+  .package-actions {
+    margin-top: 20px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    margin-right: 10px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
